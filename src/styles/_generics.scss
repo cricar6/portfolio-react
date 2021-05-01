@@ -1,0 +1,97 @@
+@import "./_colors";
+@import "./typography";
+@import "./variables";
+@import "./functions";
+
+.main-heading {
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: toRem(40);
+    line-height: toRem(38);
+    text-transform: uppercase;
+    color: #fff;
+}
+.main-subheading {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: toRem(18);
+    line-height: toRem(25);
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.secondary-heading {
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: toRem(50);
+    line-height: toRem(58);
+    color: #fff;
+}
+.tertiary-heading {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: toRem(30);
+    line-height: toRem(58);
+    color: #fff;
+}
+.menu-item {
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: toRem(20);
+    line-height: toRem(30);
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+.regular-text {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: toRem(16);
+    line-height: toRem(31);
+    letter-spacing: 0.08rem;
+    color: #ffffff;
+}
+.button-text {
+    font-family: $secondary-font;
+    font-size: toRem(16);
+    font-weight: 600;
+    line-height: toRem(31);
+    letter-spacing: 0.08rem;
+    color: #ffffff;
+}
+.button-reset-styles {
+    &,
+    &:active,
+    &:hover,
+    &:active {
+        background: none;
+        outline: none;
+        border: none;
+    }
+}
+.anchor-reset-styles {
+    color: inherit;
+    text-decoration: inherit;
+}
+.iconify {
+    width: toRem(24);
+    height: toRem(24);
+
+    path {
+        stroke: #ffffff;
+        fill: #ffffff;
+    }
+}
+
+@media (min-width: 950px) {
+    .main-heading {
+        font-size: toRem(64);
+        line-height: toRem(58);
+    }
+    .main-subheading {
+        font-size: toRem(20);
+        line-height: auto;
+    }
+}
+
+@import "./responsive";

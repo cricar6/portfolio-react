@@ -1,0 +1,31 @@
+@import '../../styles/generics';
+
+.home {
+    &__intro {
+        height: 100vh;
+        padding: var(--outer-padding);
+        padding-top: toRem(50);
+        margin: auto;
+        &-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            &-subtitle {
+                @extend .main-subheading;
+            }
+            &-title {
+                @extend .main-heading;
+            }
+            &-text {
+                @extend .regular-text;
+            }
+            .proeficiencies-resume,
+            &-text {
+                opacity: .8;
+                margin-top: toRem(25);
+            }
+        }
+    }
+}

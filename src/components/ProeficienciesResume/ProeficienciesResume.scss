@@ -1,0 +1,66 @@
+@import '../../styles/generics';
+
+.proeficiencies-resume {
+    > *:not(:last-child) {
+        margin-bottom: toRem(25);
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &-icon {
+            margin-right: toRem(15);
+            path {
+                stroke: none;
+                fill: #FFF;
+            }
+        }
+        &-title {
+            @extend .regular-text;
+            text-transform: lowercase;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .proeficiencies-resume {
+        display: flex;
+        > *:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: toRem(25);
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            &-icon {
+                margin-right: toRem(15);
+                path {
+                    stroke: none;
+                    fill: #FFF;
+                }
+            }
+            &-title {
+                text-transform: lowercase;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .proeficiencies-resume {
+        > *:not(:last-child) {
+            margin-right: toRem(45);
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                border-radius: 5px;
+                background: white;
+                right: toRem(-20);
+            }
+        }
+    }
+    
+}

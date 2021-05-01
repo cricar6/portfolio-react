@@ -1,0 +1,43 @@
+@import '../../styles/generics';
+
+.disciplines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--outer-padding);
+    padding-top: toRem(70);
+    padding-bottom: toRem(70);
+    background: rgba(0,0,0,.4);
+    & > * {
+        width: 100%;
+        margin-bottom: toRem(50);
+    }
+    &__title {
+        @extend .secondary-heading;
+        text-transform: uppercase;
+        margin-bottom: toRem(50);
+    }
+    &__item {
+        &-title {
+            @extend .tertiary-heading;
+        }
+        &-text {
+            @extend .regular-text;
+        }
+    }
+}
+
+@media (min-width: 920px) {
+    .disciplines {
+        & > * {
+            width: 45%;
+            padding-right: 1%;
+            margin-right: 1%;
+            margin-bottom: toRem(50);
+        }
+        &__title {
+            margin-bottom: toRem(140);
+        }
+    }
+}

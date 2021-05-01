@@ -1,0 +1,39 @@
+@import '../../styles/generics';
+
+.about-me {
+    &__intro {
+        padding: var(--outer-padding);
+        padding-top: toRem(150);
+        padding-bottom: toRem(150);
+        margin: auto;
+        &-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            &-subtitle {
+                @extend .main-subheading;
+            }
+            &-title {
+                @extend .main-heading;
+                margin: toRem(20) 0;
+            }
+            &-text {
+                @extend .regular-text;
+            }
+            .proeficiencies-resume,
+            &-text {
+                opacity: 1;
+                margin-top: toRem(25);
+            }
+        }
+        .abilities {
+            margin-top: toRem(40);
+        }
+    }
+    .main-button {
+        transform: translateY(-50%);
+        margin: auto;
+    }
+}

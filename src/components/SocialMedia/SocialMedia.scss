@@ -1,0 +1,52 @@
+@import '../../styles/generics';
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+    &__item {
+        @extend .anchor-reset-styles;
+        display: flex;
+        align-items: center;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        padding: toRem(10);
+        width: fit-content;
+        margin-bottom: toRem(15);
+        margin-right: toRem(15);
+        transition: $regular-transition;
+        opacity: .8;
+        padding-right: toRem(45);
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        &:hover & {
+            &-action {
+                opacity: 1;
+                transform: translateY(-50%) translateX(toRem(-10));
+            }
+        }
+        &-icon {
+            margin-right: toRem(16);
+
+        }
+        &-title {
+            @extend .anchor-reset-styles;
+            @extend .button-text;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        &-action {
+            transition: $regular-transition;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            opacity: 0;
+        }
+    }
+}
