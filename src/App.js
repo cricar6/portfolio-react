@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 
 import Header from './components/Header/Header'
 import Home from './containers/Home/Home'
@@ -235,7 +235,7 @@ function App() {
       tags: ["ux", "ui", "dev"]
   }*/
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <section className="main-container--blue">
         <Header logo={logo}/>
         <main className="main-container--blue">
@@ -246,7 +246,7 @@ function App() {
               </>
             )}
             />
-            <Route path='/about-me' render={(props) => (
+            <Route path='/about-me' render={() => (
               <>
                 <AboutMe socials={socials} proeficiencies={proeficiencies} abilities={abilities} discplines={discplines}/>
               </>
