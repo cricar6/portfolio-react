@@ -7,16 +7,16 @@ const Header = ({ logo }) => {
     return (
     <header className="header">
         <section className="header__logo">
-            <Link to="/" replace>
+            <Nav.Link to="/" replace>
                 <img src={logo} alt="Cristian Rodríguez"/>
-            </Link>
+            </Nav.Link>
         </section>
         <nav className="navigation">
             <ul className="navigation__container">
                 <li className="navigation__item">
-                    <Link to="/about-me" className="navigation__button" replace>
+                    <Nav.Link to="/about-me" className="navigation__button" replace>
                         About Me
-                    </Link>
+                    </Nav.Link>
                 </li>
             </ul>
         </nav>
