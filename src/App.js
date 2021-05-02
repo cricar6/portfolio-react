@@ -53,19 +53,19 @@ function App() {
     {
       title: "My Github",
       icon: githubIcon,
-      url: '#',
+      url: 'https://github.com/cricar6/',
       id: 1
     },
     {
         title: "My LinkedIn",
         icon: linkedinIcon,
-        url: '#',
+        url: 'https://www.linkedin.com/in/cristian-rodriguez-cardona-884669130/',
         id: 2
     },
     {
         title: "My Behance",
         icon: behanceIcon,
-        url: '#',
+        url: 'https://www.behance.net/Cristian6569',
         id: 3
     }
   ]);
@@ -137,7 +137,7 @@ function App() {
         {
           title: "View on Figma",
           icon: figmaLogo,
-          url: '#'
+          url: 'https://www.figma.com/file/IibaTAxXAXFDruT9z97NJDAH/Kal_-Interface?node-id=0%3A2'
         }
       ],
       projectContent: [{
@@ -184,12 +184,7 @@ function App() {
         {
           title: "View on Github",
           icon: githubIcon,
-          url: '#'
-        },
-        {
-          title: "View on Behance",
-          icon: behanceIcon,
-          url: '#'
+          url: 'https://github.com/cricar6/IceCreamNation'
         }
       ],
       projectContent: [
@@ -225,7 +220,7 @@ function App() {
         {
           title: "View on Github",
           icon: githubIcon,
-          url: '#'
+          url: 'https://github.com/cricar6/Dotter'
         }
       ],
       projectContent: [{
