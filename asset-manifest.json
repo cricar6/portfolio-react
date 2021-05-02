@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.bd044fe9.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.18a478be.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.18a478be.chunk.js.map",
+    "main.css": "/portfolio-react/static/css/main.1f53db88.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.6994a2d7.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.6994a2d7.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.6f1a0990.js",
     "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.6f1a0990.js.map",
     "static/js/2.6da9b670.chunk.js": "/portfolio-react/static/js/2.6da9b670.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.59b8e632.chunk.js": "/portfolio-react/static/js/3.59b8e632.chunk.js",
     "static/js/3.59b8e632.chunk.js.map": "/portfolio-react/static/js/3.59b8e632.chunk.js.map",
     "index.html": "/portfolio-react/index.html",
-    "static/css/main.bd044fe9.chunk.css.map": "/portfolio-react/static/css/main.bd044fe9.chunk.css.map",
+    "static/css/main.1f53db88.chunk.css.map": "/portfolio-react/static/css/main.1f53db88.chunk.css.map",
     "static/js/2.6da9b670.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.6da9b670.chunk.js.LICENSE.txt",
     "static/media/CremososContent1.c584b1e2.jpg": "/portfolio-react/static/media/CremososContent1.c584b1e2.jpg",
     "static/media/CremososContent2.e6a17345.jpg": "/portfolio-react/static/media/CremososContent2.e6a17345.jpg",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.6f1a0990.js",
     "static/js/2.6da9b670.chunk.js",
-    "static/css/main.bd044fe9.chunk.css",
-    "static/js/main.18a478be.chunk.js"
+    "static/css/main.1f53db88.chunk.css",
+    "static/js/main.6994a2d7.chunk.js"
   ]
 }
