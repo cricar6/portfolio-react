@@ -82,7 +82,7 @@ function App() {
     },
     {
         icon: userIcon,
-        title: "Front-end Developer",
+        title: "UX Designer",
         id: 3
     }
   ]);
@@ -258,7 +258,9 @@ function App() {
             />
             <Route exact path='/about-me' render={() => (
               <>
-                <AboutMe socials={socials} proeficiencies={proeficiencies} abilities={abilities} discplines={discplines}/>
+                <ScrollToTop>
+                  <AboutMe socials={socials} proeficiencies={proeficiencies} abilities={abilities} discplines={discplines}/>
+                </ScrollToTop>
               </>
             )}
             />
