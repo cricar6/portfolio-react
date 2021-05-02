@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/%7Brepo-name%7D/static/css/main.4e3a6ccd.chunk.css",
+    "main.js": "/%7Brepo-name%7D/static/js/main.945cc3e6.chunk.js",
+    "main.js.map": "/%7Brepo-name%7D/static/js/main.945cc3e6.chunk.js.map",
+    "runtime-main.js": "/%7Brepo-name%7D/static/js/runtime-main.92464148.js",
+    "runtime-main.js.map": "/%7Brepo-name%7D/static/js/runtime-main.92464148.js.map",
+    "static/js/2.129daba8.chunk.js": "/%7Brepo-name%7D/static/js/2.129daba8.chunk.js",
+    "static/js/2.129daba8.chunk.js.map": "/%7Brepo-name%7D/static/js/2.129daba8.chunk.js.map",
+    "static/js/3.59b8e632.chunk.js": "/%7Brepo-name%7D/static/js/3.59b8e632.chunk.js",
+    "static/js/3.59b8e632.chunk.js.map": "/%7Brepo-name%7D/static/js/3.59b8e632.chunk.js.map",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "static/css/main.4e3a6ccd.chunk.css.map": "/%7Brepo-name%7D/static/css/main.4e3a6ccd.chunk.css.map",
+    "static/js/2.129daba8.chunk.js.LICENSE.txt": "/%7Brepo-name%7D/static/js/2.129daba8.chunk.js.LICENSE.txt",
+    "static/media/CremososContent1.c584b1e2.jpg": "/%7Brepo-name%7D/static/media/CremososContent1.c584b1e2.jpg",
+    "static/media/CremososContent2.e6a17345.jpg": "/%7Brepo-name%7D/static/media/CremososContent2.e6a17345.jpg",
+    "static/media/HandBottom.86704fdb.png": "/%7Brepo-name%7D/static/media/HandBottom.86704fdb.png",
+    "static/media/HandTop.ab56eae1.png": "/%7Brepo-name%7D/static/media/HandTop.ab56eae1.png",
+    "static/media/KalContent1.836fb277.jpg": "/%7Brepo-name%7D/static/media/KalContent1.836fb277.jpg",
+    "static/media/KalContent2.dd046999.jpg": "/%7Brepo-name%7D/static/media/KalContent2.dd046999.jpg",
+    "static/media/ProfilePhoto.8833c418.png": "/%7Brepo-name%7D/static/media/ProfilePhoto.8833c418.png",
+    "static/media/aventi1.1b88d41a.png": "/%7Brepo-name%7D/static/media/aventi1.1b88d41a.png",
+    "static/media/aventi2.e90bc68e.png": "/%7Brepo-name%7D/static/media/aventi2.e90bc68e.png",
+    "static/media/aventi3.fb8c4c61.png": "/%7Brepo-name%7D/static/media/aventi3.fb8c4c61.png",
+    "static/media/cremosos-back.338992d0.png": "/%7Brepo-name%7D/static/media/cremosos-back.338992d0.png",
+    "static/media/cremosos-desk.adcab22d.png": "/%7Brepo-name%7D/static/media/cremosos-desk.adcab22d.png",
+    "static/media/cremosos1.010c32b0.png": "/%7Brepo-name%7D/static/media/cremosos1.010c32b0.png",
+    "static/media/cremosos2.0fba5455.png": "/%7Brepo-name%7D/static/media/cremosos2.0fba5455.png",
+    "static/media/kal-back.46695f65.png": "/%7Brepo-name%7D/static/media/kal-back.46695f65.png",
+    "static/media/kal1.326b3e68.png": "/%7Brepo-name%7D/static/media/kal1.326b3e68.png",
+    "static/media/logo.5501f974.svg": "/%7Brepo-name%7D/static/media/logo.5501f974.svg",
+    "static/media/medot-back.b80ea413.png": "/%7Brepo-name%7D/static/media/medot-back.b80ea413.png",
+    "static/media/medot1.ebc92722.png": "/%7Brepo-name%7D/static/media/medot1.ebc92722.png",
+    "static/media/medot2.709b12fa.png": "/%7Brepo-name%7D/static/media/medot2.709b12fa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92464148.js",
+    "static/js/2.129daba8.chunk.js",
+    "static/css/main.4e3a6ccd.chunk.css",
+    "static/js/main.945cc3e6.chunk.js"
+  ]
+}
