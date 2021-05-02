@@ -1,10 +1,13 @@
-import { useState } from 'react'
-import {HashRouter as Router, Route, Switch} from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+
+
+import {HashRouter as Router, Route, Switch, withRouter, useLocation} from 'react-router-dom'
 
 import Header from './components/Header/Header'
 import Home from './containers/Home/Home'
 import logo from './assets/logo.svg'
 import AboutMe from './containers/AboutMe/AboutMe'
+import ProjectDetail from './containers/ProjectDetail/ProjectDetail'
 
 import githubIcon from '@iconify/icons-ant-design/github-filled'
 import linkedinIcon from '@iconify/icons-ant-design/linkedin-filled'
@@ -35,8 +38,15 @@ import medot_back from './assets/Medot/medot-back.png'
 import aventi1 from './assets/Aventi/aventi1.png'
 import aventi2 from './assets/Aventi/aventi2.png'
 import aventi3 from './assets/Aventi/aventi3.png'
-import ProjectDetail from './containers/ProjectDetail/ProjectDetail'
 
+function _ScrollToTop(props) {
+  const { pathname } = useLocation();
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
+  return props.children
+}
+const ScrollToTop = withRouter(_ScrollToTop)
 
 function App() {
   const[socials] = useState([
@@ -246,14 +256,16 @@ function App() {
               </>
             )}
             />
-            <Route path='/about-me' render={() => (
+            <Route exact path='/about-me' render={() => (
               <>
                 <AboutMe socials={socials} proeficiencies={proeficiencies} abilities={abilities} discplines={discplines}/>
               </>
             )}
             />
-            <Route path='/project/:id'>
-              <ProjectDetail projects={projects} />
+            <Route exact path='/project/:id'>
+              <ScrollToTop>
+                <ProjectDetail projects={projects} />
+              </ScrollToTop>
             </Route>
           </Switch>
         </main>

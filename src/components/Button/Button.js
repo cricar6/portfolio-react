@@ -7,14 +7,14 @@ import arrowRightIcon from '@iconify/icons-heroicons-outline/arrow-sm-right';
 
 const Button = ({ title, reference}) => {
     return (
-        <Nav.Link className="main-button" to={reference} replace>
+        <Link className="main-button" to={reference} replace>
             <p className="main-button__title">
                 {title}
             </p>
             <div className="main-button__action">
                 <Icon className="iconify" icon={arrowRightIcon} />
             </div>
-        </Nav.Link>
+        </Link>
     )
 }
 

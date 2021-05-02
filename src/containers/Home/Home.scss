@@ -31,35 +31,48 @@
         }
     }
 
-    &__projects {
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        position: absolute;
 
-        &-container {
-            height: 100vh;
-            position: relative;
-        }
 
-        &-wrapper {
-            display: flex;
-            flex-direction: row;
-            width: 300vw;
-            transform: rotate(90deg) translateY(-100vh);
+}
+
+@media (min-width: 1100px) {
+    .home {
+        &__projects {
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(-90deg) translateX(-100vh);
             transform-origin: top left;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            .project {
-                width: 100vw;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            position: absolute;
+    
+            &-container {
+                height: 100vh;
+                position: relative;
+            }
+    
+            &-wrapper {
+                display: flex;
+                flex-direction: row;
+                width: 300vw;
+                transform: rotate(90deg) translateY(-100vh);
+                transform-origin: top left;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                .project {
+                    width: 100vw;
+                }
             }
         }
+
     }
 }
 
+@media (max-width: 1100px) {
+    .home .status-scrollbar {
+        display: none;
+    }
+}
 ::-webkit-scrollbar {
     display: none;
 }

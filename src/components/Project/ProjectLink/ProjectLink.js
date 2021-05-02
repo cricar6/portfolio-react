@@ -5,14 +5,14 @@ import arrowRightIcon from '@iconify/icons-heroicons-outline/arrow-sm-right';
 
 const ProjectLink = ({title, reference}) => {
     return (
-        <a className="main-button" href={"/project/" + reference}>
+        <Link className="main-button" to={"/project/" + reference}>
             <p className="main-button__title">
                 {title}
             </p>
             <div className="main-button__action">
                 <Icon className="iconify" icon={arrowRightIcon} />
             </div>
-        </a>
+        </Link>
     )
 }
 
