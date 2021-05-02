@@ -1,29 +1,19 @@
-import PropTypes from 'prop-types';
-import './Button.scss'
+import React from 'react'
 import { Link } from 'react-router-dom';
-
 import { Icon } from '@iconify/react';
 import arrowRightIcon from '@iconify/icons-heroicons-outline/arrow-sm-right';
 
-const Button = ({ title, reference}) => {
+const ProjectLink = ({title, reference}) => {
     return (
-        <Link className="main-button" to={reference} replace>
+        <a className="main-button" href={"/project/" + reference}>
             <p className="main-button__title">
                 {title}
             </p>
             <div className="main-button__action">
                 <Icon className="iconify" icon={arrowRightIcon} />
             </div>
-        </Link>
+        </a>
     )
 }
 
-Button.defaultProps = {
-    title: 'Text by default'
-}
-
-Button.propTypes = {
-    title: PropTypes.string.isRequired,
-}
-
-export default Button
+export default ProjectLink

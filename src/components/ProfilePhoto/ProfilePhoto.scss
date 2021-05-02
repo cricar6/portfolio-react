@@ -1,0 +1,6 @@
+@import '../../styles/generics';
+
+article.profile-photo img {
+    border-radius: 100px;
+    margin-bottom: toRem(20);
+}

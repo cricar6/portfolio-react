@@ -1,0 +1,140 @@
+@import '../../styles/generics';
+
+.project-detail {
+    padding-bottom: toRem(150);
+    background: white;
+    &__header {
+        background-color: $black;
+        padding-top: toRem(150);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-info {            
+            padding: var(--outer-padding);
+            padding-top: toRem(150);
+        }
+        .tags {
+            margin-left: 0;
+        }
+        &-background {
+            width: 100%;
+        }
+    }
+    &__name {
+        @extend .main-heading;
+        margin: toRem(10) 0 toRem(20);
+    }
+    &__content {
+        &-title,
+        &-text,
+        &--image {
+            margin-left: toRem(40);
+            margin-right: toRem(40);
+        }
+        &-title {
+            @extend .tertiary-heading;
+            color: $black;
+            margin-top: toRem(40)
+        }
+        &-text {
+            @extend .regular-text;
+            color: $black;
+            margin-bottom: toRem(30);
+        }
+
+        &--onContentImage {
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100vh;
+            }
+        }
+        &--image {
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .project-detail {
+        &__header {
+            padding-top: toRem(50);
+            &-info {
+                padding-top: toRem(50);
+            }
+        }
+
+    }
+}
+
+@media (min-width: 700px) {
+    .project-detail {
+        &__header {
+            padding-top: unset;
+            flex-direction: row;
+            align-items: flex-end;
+            position: relative;
+            &-info {
+                padding-top: unset;
+                position: relative;
+                z-index: 9;
+                background: linear-gradient(360deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0) 100%);                flex-grow: 1;
+            }
+            &-background {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        &__content {
+            &--text,
+            &--image {
+                max-width: 700px;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .project-detail {
+        &__header {
+            &-background {
+                width: 710px;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .project-detail {
+        &__header {
+            &-background {
+                right: toRem(40);
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .project-detail {
+        &__header {
+            height: 70vh;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .project-detail {
+        &__header {
+            &-background {
+                right: 10%;
+            }
+        }
+    }
+}

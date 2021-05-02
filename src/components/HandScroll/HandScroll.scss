@@ -7,7 +7,14 @@
         position: relative;
     }
 }
-
+.home__intro {
+    .hand-scroll {
+        &__hand-top,
+        &__hand-bottom {
+            position: absolute;
+        }
+    }
+}
 .hand-scroll {
     &__hand-top,
     &__hand-bottom {
@@ -66,7 +73,7 @@
             }
         }
         .hand-scroll {
-            position: fixed;
+            position: absolute;
             top: unset;
             bottom: 0;
             right: 0;
@@ -93,7 +100,7 @@
 
             .scroller {
                 bottom: 50%;
-                left: 50%;
+                right: 50%;
                 transform: translateX(-50%) translateY(-20px);
             }
         }

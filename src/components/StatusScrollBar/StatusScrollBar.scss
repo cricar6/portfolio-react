@@ -1,0 +1,29 @@
+@import '../../styles/generics';
+
+.status-scrollbar {
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    &__item {
+        @extend .regular-text;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: '';
+            background: white;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            border-radius: 50%;
+        }
+    }
+}

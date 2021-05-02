@@ -1,18 +1,22 @@
 import './Header.scss';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 
 const Header = ({ logo }) => {
     return (
-    <header class="header">
-        <section class="header__logo">
-            <img src={logo} alt="Cristian Rodríguez"/>
+    <header className="header">
+        <section className="header__logo">
+            <Link to="/" replace>
+                <img src={logo} alt="Cristian Rodríguez"/>
+            </Link>
         </section>
-        <nav class="navigation">
-            <ul class="navigation__container">
-                <li class="navigation__item">
-                    <button class="navigation__button">
+        <nav className="navigation">
+            <ul className="navigation__container">
+                <li className="navigation__item">
+                    <Link to="/about-me" className="navigation__button" replace>
                         About Me
-                    </button>
+                    </Link>
                 </li>
             </ul>
         </nav>

@@ -1,11 +1,17 @@
 @import '../../styles/generics';
 
 .about-me {
+    background-color: $black;
+    .hand-scroll__hand-top::after,
+    .hand-scroll__hand-bottom::after {
+        background: $black;
+    }
     &__intro {
         padding: var(--outer-padding);
         padding-top: toRem(150);
         padding-bottom: toRem(150);
         margin: auto;
+
         &-container {
             display: flex;
             align-items: flex-start;
@@ -35,5 +41,6 @@
     .main-button {
         transform: translateY(-50%);
         margin: auto;
+        width: fit-content;
     }
 }

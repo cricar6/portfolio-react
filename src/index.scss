@@ -5,7 +5,6 @@
   --outer-width: 1250px;
 }
 
-
 @media (min-width: 660px) {
   :root {
       --outer-padding: 30px 50px;
@@ -18,9 +17,19 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 html {
   font-size: 12px;
 }
+
+body {
+  background-color: $blue;
+}
+
+a {
+  text-decoration: unset;
+}
+
 .main-container {
   &--pink {
     background-color: $pink;
@@ -36,8 +45,24 @@ html {
       background: $black;
     }
   }
+
+  &--blue {
+    background-color: $blue;
+    .hand-scroll__hand-top::after,
+    .hand-scroll__hand-bottom::after {
+      background: $blue;
+    }
+  }
 }
 
+.tags {
+  margin-left: toRem(40);
+  svg {
+      path {
+          stroke: none
+      }
+  }
+}
 @media (min-width: 500px) {
   html {
       font-size: 14px;

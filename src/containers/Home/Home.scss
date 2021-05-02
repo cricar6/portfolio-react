@@ -12,6 +12,8 @@
             justify-content: center;
             flex-direction: column;
             height: 100%;
+            z-index: 9;
+            position: relative;
             &-subtitle {
                 @extend .main-subheading;
             }
@@ -28,4 +30,36 @@
             }
         }
     }
+
+    &__projects {
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+
+        &-container {
+            height: 100vh;
+            position: relative;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 300vw;
+            transform: rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            .project {
+                width: 100vw;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
