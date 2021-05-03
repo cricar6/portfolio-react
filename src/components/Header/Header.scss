@@ -26,3 +26,23 @@
         color: $yellow;
     }
 }
+
+.header {
+    animation-fill-mode: forwards;
+    animation-name: fade-top-header;
+    animation-duration: 4s;
+    animation-delay: 6s;
+    transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);;                    
+    opacity: 0;
+}
+
+@keyframes fade-top-header {
+    from {
+        transform: translateY(-50px) translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
+    }
+}
